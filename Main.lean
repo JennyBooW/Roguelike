@@ -1,4 +1,5 @@
-import Roguelike
+import Roguelike.Renderer
 
+open Render in
 def main : IO Unit :=
-  IO.println s!"Hello, {hello}!"
+  IO.println (render_world empty_world)
