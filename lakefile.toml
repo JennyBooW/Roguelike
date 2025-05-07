@@ -1,0 +1,10 @@
+name = "roguelike"
+version = "0.1.0"
+defaultTargets = ["roguelike"]
+
+[[lean_lib]]
+name = "Roguelike"
+
+[[lean_exe]]
+name = "roguelike"
+root = "Main"
