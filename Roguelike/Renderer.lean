@@ -41,17 +41,17 @@ open Colors in
 def render_entity : Entity → String
   | entity =>
     match entity.t with
-    | .Gob        => colored Color.Green  "g"
-    | .Cork       => colored Color.Green  "C"
-    | .Bogre      => colored Color.Green  "B"
-    | .Demon      => colored Color.Red    "D"
-    | .Necromance => colored Color.Yellow "N"
-    | .Player     => colored Color.White  "@"
-    | .Dead       => colored Color.Gray   "x"
-    | .Structure  => colored Color.White  "█"
-    | .Undead     => colored Color.Purple "U"
-    | .Neutral    => colored Color.Blue   "@"
-    | .Empty      =>                      " "
+    | .Gob        => colored Color.Green  " g "
+    | .Cork       => colored Color.Green  " C "
+    | .Bogre      => colored Color.Green  " B "
+    | .Demon      => colored Color.Red    " D "
+    | .Necromance => colored Color.Yellow " N "
+    | .Player     => colored Color.White  " e "
+    | .Dead       => colored Color.Gray   " x "
+    | .Structure  => colored Color.White  " █ "
+    | .Undead     => colored Color.Purple " U "
+    | .Neutral    => colored Color.Blue   " e "
+    | .Empty      =>                      "   "
 
 open World
 
@@ -68,6 +68,6 @@ def World.toString : World → String
   | w => render_world w
 
 -- Testing
-def empty_world := get_empty_world 3 3
+def empty_world := get_empty_world 10 10
 
 end Render

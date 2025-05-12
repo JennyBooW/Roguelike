@@ -30,7 +30,7 @@ def get_empty_entites (width : Nat) (height : Nat) : Entites := Id.run do
 
   for i in [0:width] do
     for j in [0:height] do
-      inner := inner ++ #[ empty ⟨ i, j ⟩ ]
+      inner := inner ++ #[ get_enemy_gob ⟨ i, j ⟩ j]
     outer := outer ++ #[ inner ]
     inner := #[]
   return outer

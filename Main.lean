@@ -1,4 +1,5 @@
 import Roguelike.Renderer
+import Roguelike.Game
 
 open Render in
 def main : IO Unit :=
